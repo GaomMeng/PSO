@@ -19,8 +19,8 @@ import copy
 PSO基本原理：模仿鸟群觅食
 
 PSO架构：
-（1）、Particle类：定义粒子，主要记录粒子的位置、速度、适应值、历史最优位置
-（2）、PSO类：算法主体，包含算法细节
+（1）Particle类：定义粒子，主要记录粒子的位置、速度、适应值、历史最优位置
+（2）PSO类：算法主体，包含算法细节
 
 """
 
@@ -186,9 +186,9 @@ class PSO:
 
         return_dict = {'pop': pop,
                        'x_list': x_list,
-                       'fit_list': fit_list,
+                       'f_list': fit_list,
                        'best_x': self.get_bestPosition(),
-                       'best_v': self.get_bestFitnessValue()}
+                       'best_f': self.get_bestFitnessValue()}
         return return_dict
 
 
@@ -229,7 +229,7 @@ if __name__ == '__main__':
     pso = PSO(args, pso_config)
     pso_dict = pso.update()
 
-    print(f"   the max value is : {pso_dict['best_v']}    the best position is {pso_dict['best_x']}   ")
+    print(f"   the max fitness is : {pso_dict['best_f']}    the best position is {pso_dict['best_x']}   ")
 
 
 
