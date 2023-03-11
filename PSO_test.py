@@ -32,9 +32,9 @@ class Particle:
     x_max：解的边界，任意x解应该属于区间[-x_max, x_max]
     max_vel: 最大速度
     dim：问题维数，即解的维数
-    config：初始化列表，主要包含一个具有适应度函数的类，可根据需要传入其他参数，例如：   config = {'plm': mp, key1: value1, key2: value2, ...}
+    config：初始化列表，主要包含一个具有适应度函数的类，可根据需要传入其他参数，例如：   config = {'plm': plm, key1: value1, key2: value2, ...}
 
-    "plm":定义的一个类，根据具体情况修改。例如设适应值为二次函数 y=x^2 ， 定义如下：
+    plm:定义的一个类，根据具体情况修改。例如设适应值为二次函数 y=100 - x^2 ， 定义如下：
 
     class Function:
         def __init__(self):
@@ -91,9 +91,9 @@ class PSO:
     初始化参数表：
 
     args：参数列表，包含所需要的所有参数，例如迭代次数、种群边界等等
-    config：初始化列表，主要包含一个具有适应度函数的类，可根据需要传入其他参数，例如：   config = {'plm': mp, key1: value1, key2: value2, ...}
+    config：初始化列表，主要包含一个具有适应度函数的类，可根据需要传入其他参数，例如：   config = {'plm': plm, key1: value1, key2: value2, ...}
 
-    "plm":定义的一个类，根据具体情况修改。例如设适应值为二次函数 y=x^2 ， 定义如下：
+    plm:定义的一个类，根据具体情况修改。例如设适应值为二次函数 y=100 - x^2 ， 定义如下：
 
     class Function:
         def __init__(self):
