@@ -1,7 +1,7 @@
 # -*- encoding = utf-8 -*-
 # @Time : 2022/6/28 17:39
-# @Author : 高猛
-# @File : my_pso.py
+# @Author : gm
+# @File : PSO_test.py
 # @Software : PyCharm
 
 import numpy as np
