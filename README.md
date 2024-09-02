@@ -89,7 +89,7 @@ best_position = pso_dict['best_x']
 The code includes a test case optimizing the function `y = 100 - x * x`. Run the script to see it in action:
 
 ```
-python your_script_name.py
+python pso_test.py
 ```
 
 ## Customization
